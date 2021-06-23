@@ -1,0 +1,13 @@
+{
+  "name": "tailwind-scrollbar-variants",
+  "version": "1.0.0",
+  "description": "Adds scrollbar variants",
+  "main": "index.js",
+  "repository": "https://github.com/chaseweaver/tailwind-scrollbar-variants",
+  "author": "chaseweaver",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.2",
+    "typescript": "^4.3.4"
+  }
+}
