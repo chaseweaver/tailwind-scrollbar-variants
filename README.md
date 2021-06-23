@@ -63,12 +63,50 @@ Rounded scrollbar with adjusted background color and opacity (shorthand)
 
 Add it at the end of the plugins list in your `tailwind.config.js` file.
 
-```
+```js
 module.exports = {
   // ...
   plugins: [
     // ...
     require("tailwind-scrollbar-variant"),
+  ],
+};
+```
+
+<br />
+
+## Options
+
+Customize defaults for `scrollbar-rounded` class:
+```js
+module.exports = {
+  // ...
+  plugins: [
+    // ...
+    require("tailwind-scrollbar-variant")({
+      button: {
+        display: "none",
+        height: "0px",
+        width: "0px"
+      },
+      corner: {
+        bgColor: "transparent"
+      },
+      scrollbar: {
+        height: "14px",
+        scrollbarWidth: "thin",
+        width: "14px"
+      },
+      thumb: {
+        bgOpacity: "0.15",
+        borderColor: "transparent",
+        borderRadius: "7px",
+        borderStyle: "solid",
+        borderWidth: "4px",
+        height: "auto",
+        width: "auto"
+      }
+    }),
   ],
 };
 ```
