@@ -1,6 +1,5 @@
 const plugin = require("tailwindcss/plugin");
 const _ = require("lodash");
-const { createImportSpecifier } = require("typescript");
 
 module.exports = plugin.withOptions(options => {
   return ({ addUtilities, addVariant, e }) => {
