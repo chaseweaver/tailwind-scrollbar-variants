@@ -96,7 +96,7 @@ module.exports = plugin.withOptions(options => {
     const buttonHeight = options?.button?.height ?? "0px";
     const buttonWidth = options?.button?.width ?? "0px";
     const cornerBgColor = options?.corner?.bgColor ?? "transparent";
-    const scollbarHeight = options?.scrollbar?.height ?? "14px";
+    const scrollbarHeight = options?.scrollbar?.height ?? "14px";
     const scrollbarScrollbarWidth =
       options?.scrollbar?.scrollbarWidth ?? "thin";
     const scrollbarWidth = options?.scrollbar?.width ?? "14px";
@@ -117,7 +117,7 @@ module.exports = plugin.withOptions(options => {
       ".scrollbar-rounded": {
         "&::-webkit-scrollbar": {
           "scrollbar-width": scrollbarScrollbarWidth,
-          height: scollbarHeight,
+          height: scrollbarHeight,
           width: scrollbarWidth
         },
         "&::-webkit-scrollbar-thumb": {
