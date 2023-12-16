@@ -72,7 +72,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
     ["auto", "inherit", "initial", "none", "revert", "thin", "unset"].map(
       (v) => ({
         [`.${e(`scrollbar-width-${v}`)}`]: {
-          "scrollbar-width": value,
+          "scrollbar-width": v,
         },
       })
     )
