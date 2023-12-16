@@ -6,11 +6,8 @@ settings:
 
 dependencies:
   tailwindcss:
-    specifier: ^3.3.6
+    specifier: ^3.0.0
     version: 3.3.6
-  typescript:
-    specifier: ^5.3.3
-    version: 5.3.3
 
 packages:
 
@@ -550,12 +547,6 @@ packages:
 
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
-    dev: false
-
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
-    engines: {node: '>=14.17'}
-    hasBin: true
     dev: false
 
   /util-deprecate@1.0.2:
