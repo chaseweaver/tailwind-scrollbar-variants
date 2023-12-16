@@ -6,22 +6,14 @@ This plugin adds scrollbar variants
 
 ## Features
 
-The built in Scrollbar class
-```html
-<div class="scrollbar-rounded">
-  ...
-<div>
-```
-
 The built in Overflow class
+
 ```html
-<div class="overflow-[<x|y>-]overlay">
-  ...
-<div>
+<div class="overflow-[<x|y>-]overlay">...</div>
 ```
 
 | Prefix                  | Pseudo-Element                    |
-|-------------------------|-----------------------------------|
+| ----------------------- | --------------------------------- |
 | `scrollbar`             | `::-webkit-scrollbar`             |
 | `scrollbar-button`      | `::-webkit-scrollbar-button`      |
 | `scrollbar-thumb`       | `::-webkit-scrollbar-thumb`       |
@@ -34,27 +26,24 @@ The built in Overflow class
 
 ## Examples
 
-Rounded scrollbar with x-axis margins
+x-axis margins
+
 ```html
-<div class="scrollbar-rounded scrollbar-track:mx-4">
-  ...
-<div>
+<div class="scrollbar-track:mx-4">...</div>
 ```
 
-Rounded scrollbar with adjusted thumb opacity
+Adjusted thumb opacity
+
 ```html
-<div class="scrollbar-rounded scrollbar-thumb:bg-opacity-[0.1]">
-  ...
-<div>
+<div class="scrollbar-thumb:bg-opacity-[0.1]">...</div>
 ```
 
 _Or get really crazy_
 
-Rounded scrollbar with adjusted background color and opacity (shorthand)
+Adjusted background color and opacity (shorthand)
+
 ```html
-<div class="scrollbar-rounded scrollbar-thumb:bg-red-500/[0.26]">
-  ...
-<div>
+<div class="scrollbar-thumb:bg-red-500/[0.26]">...</div>
 ```
 
 <br />
@@ -69,44 +58,6 @@ module.exports = {
   plugins: [
     // ...
     require("tailwind-scrollbar-variant"),
-  ],
-};
-```
-
-<br />
-
-## Options
-
-Customize defaults for `scrollbar-rounded` class:
-```js
-module.exports = {
-  // ...
-  plugins: [
-    // ...
-    require("tailwind-scrollbar-variant")({
-      button: {
-        display: "none",
-        height: "0px",
-        width: "0px"
-      },
-      corner: {
-        bgColor: "transparent"
-      },
-      scrollbar: {
-        height: "14px",
-        scrollbarWidth: "thin",
-        width: "14px"
-      },
-      thumb: {
-        bgOpacity: "0.15",
-        borderColor: "transparent",
-        borderRadius: "7px",
-        borderStyle: "solid",
-        borderWidth: "4px",
-        height: "auto",
-        width: "auto"
-      }
-    }),
   ],
 };
 ```
