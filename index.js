@@ -91,7 +91,4 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
       "overflow-y": "overlay",
     },
   });
-
-  if (typeof thumbBgOpacity !== "string")
-    thumbBgOpacity = thumbBgOpacity.toString();
 });
