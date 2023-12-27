@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <br />
 
+## [2.0.4] - 2023-12-27
+
+### Changed
+
+- Incorrect webkit scrollbar selector
+
 ## [2.0.3] - 2023-12-15
 
 ### Changed

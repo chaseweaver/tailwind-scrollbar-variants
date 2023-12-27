@@ -5,7 +5,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
   addVariant("scrollbar", ({ modifySelectors, separator }) => {
     modifySelectors(
       ({ className }) =>
-        `.${e(`scrollbar${separator}${className}`)}::-webkit-scrollbar`
+        `.${e(`scrollbar${separator}${className}`)}::--webkit-scrollbar`
     );
   });
 
@@ -15,7 +15,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
       ({ className }) =>
         `.${e(
           `scrollbar-button${separator}${className}`
-        )}::-webkit-scrollbar-button`
+        )}::--webkit-scrollbar-button`
     );
   });
 
@@ -25,7 +25,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
       ({ className }) =>
         `.${e(
           `scrollbar-thumb${separator}${className}`
-        )}::-webkit-scrollbar-thumb`
+        )}::--webkit-scrollbar-thumb`
     );
   });
 
@@ -35,7 +35,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
       ({ className }) =>
         `.${e(
           `scrollbar-track${separator}${className}`
-        )}::-webkit-scrollbar-track`
+        )}::--webkit-scrollbar-track`
     );
   });
 
@@ -45,7 +45,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
       ({ className }) =>
         `.${e(
           `scrollbar-track-piece${separator}${className}`
-        )}::-webkit-scrollbar-track-piece`
+        )}::--webkit-scrollbar-track-piece`
     );
   });
 
@@ -55,7 +55,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
       ({ className }) =>
         `.${e(
           `scrollbar-corner${separator}${className}`
-        )}::-webkit-scrollbar-corner`
+        )}::--webkit-scrollbar-corner`
     );
   });
 
@@ -63,7 +63,7 @@ module.exports = plugin.withOptions(() => ({ addUtilities, addVariant, e }) => {
   addVariant("scrollbar-resizer", ({ modifySelectors, separator }) => {
     modifySelectors(
       ({ className }) =>
-        `.${e(`scrollbar-resizer${separator}${className}`)}::-webkit-resizer`
+        `.${e(`scrollbar-resizer${separator}${className}`)}::--webkit-resizer`
     );
   });
 
